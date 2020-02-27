@@ -1,0 +1,49 @@
+<div class="form-group">
+    <html>
+
+    <head>
+        <title>Home </title>
+
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <label class="col-md-2"></label>
+        <div class="col-md-4">
+            <input type="text" class="form-control input-md"
+                placeholder="Digite a matrícula do aluno para download do boletim" ng-model="matricula">
+        </div>
+        <button ng-click="boletimPdf()" class="btn btn-primary">Download Boletim</button>
+    </body>
+
+    </html>
+
+
+    <div class="form-group"></div>
+
+    <div class="form-group table-responsive col-md-16">
+        <table class="table table-striped ">
+            <tr>
+                <th class="col-md-1"> </th>
+                <th class="col-md-1">id</th>
+                <th class="col-md-2">Nome</th>
+                <th class="col-md-2">CPF</th>
+                <th class="col-md-2">TURMA</th>
+                <th class="col-md-2">Matricula</th>
+                <th class="col-md-2"> </th>
+
+            </tr>
+            <tr ng-repeat="aluno in alunos">
+                <td>       </td>
+                <td>{{aluno.id}}</td>
+                <td>{{aluno.nomeAluno}}</td>
+                <td>{{aluno.cpfAluno}}</td>
+                <td>{{aluno.turmaAluno}}</td>
+                <td>{{aluno.matriculaAluno}}</td>
+                <td></button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

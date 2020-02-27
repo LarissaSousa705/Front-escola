@@ -1,0 +1,90 @@
+<form class="form-horizontal">
+    <fieldset>
+        <div class="panel panel-primary" ng-controller="cadastroBoletimCtrl">
+            <div class="panel-heading">Adicionar Notas</div>
+
+            <div class="panel-body">
+                <div class="form-group">
+
+                    <div class="col-md-11 control-label">
+                        <p class="help-block">
+                            <h11>*</h11> Campo Obrigatório
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="aluno">Aluno *</label>
+                        <div class="col-md-8">
+                            <input id="aluno" name="aluno"
+                                placeholder="Digite o ID do aluno" class="form-control input-md"
+                                required="" type="text" ng-model="adicionar.aluno">
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="disciplina">Disciplina *</label>
+
+                        <div class="col-md-3">
+                            <select ng-model="adicionar.disciplina" required id="disciplina" name="disciplina"
+                                class="form-control">
+                                <option value=""></option>
+                                <option value="Língua Portuguesa">Língua Portuguesa</option>
+                                <option value="Matemática">Matemática</option>
+                                <option value="Arte">Arte</option>
+                                <option value="Biologia">Biologia</option>
+                                <option value="Educação Física">Educação Física</option>
+                                <option value="Filosofia">Filosofia</option>
+                                <option value="Física">Física</option>
+                                <option value="Geografia">Geografia</option>
+                                <option value="História">História</option>
+                                <option value="Língua Estrangeira - Inglês">Língua Estrangeira - Inglês</option>
+                                <option value="Química">Química</option>
+                                <option value="Sociologia">Sociologia</option>
+                            </select>
+                        </div>
+
+                        <label class="col-md-1 control-label" for="periodo">Período *</label>
+                        <div class="col-md-3">
+                            <select ng-model="adicionar.periodo" required id="periodo" name="periodo"
+                                class="form-control">
+                                <option value=""></option>
+                                <option value="1° trimestre">1° trimestre</option>
+                                <option value="2° trimestre">2° trimestre</option>
+                                <option value="3° trimestre">3° trimestre</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+
+                        <label class="col-md-2 control-label" for="notas">1° Nota *</label>
+                        <div class="col-md-2">
+                            <input id="notas" name="notas" class="form-control input-md" required=""
+                                type="text" ng-model="adicionar.notas">
+                        </div>
+
+                        <label class="col-md-1 control-label" for="notasUm">2° Nota *</label>
+                        <div class="col-md-2">
+                            <input id="notasUm" name="notasUm"  class="form-control input-md" required=""
+                                type="text" ng-model="adicionar.notasUm">
+                        </div>
+
+                        <label class="col-md-1 control-label" for="notasDois">3° Nota *</label>
+                        <div class="col-md-2">
+                            <input id="notasDois" name="notasDois" class="form-control input-md"
+                                required="" type="text" ng-model="adicionar.notasDois">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-2 control-label" for="Adicionar"></label>
+                        <div class="col-md-8">
+                            <button ng-click="adicionarNotas()" class="btn btn-default" type="submit">Adicionar</button>
+                            <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </fieldset>
+</form>
