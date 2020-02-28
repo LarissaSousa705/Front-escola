@@ -1,8 +1,11 @@
 Escola
 
 Pré-requisitos:
+
 •	Intellij Community
+
 •	Java 8 ou mais atual
+
 •	SQL Server
 •	Docker
 •	Visual Studio Code
