@@ -1,5 +1,6 @@
 Escola
 
+
 Pré-requisitos:
 
 •	Intellij Community
@@ -15,6 +16,7 @@ Pré-requisitos:
 •	Node
 
 •	Angular Js
+
 
 
 Próximos passos:
