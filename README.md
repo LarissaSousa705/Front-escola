@@ -3,7 +3,7 @@ Escola
 
 Pré-requisitos:
 
-•	Intellij Community
+•	Intellij
 
 •	Java 8 ou mais atual
 
@@ -15,7 +15,7 @@ Pré-requisitos:
 
 •	Node
 
-•	Angular Js
+•	Angular Js 1.5.0
 
 
 
@@ -30,3 +30,5 @@ Próximos passos:
 •	Adicione uma nota (todos os campos são obrigatórios) na opção “Adicionar Notas”
 
 •	Na tela principal (Home) você consegue ver todos os alunos cadastrados e fazer o download do boletim colocando o número de matrícula do aluno na barra de pesquisa e clicando o botão ao lado
+
+•	Para adicionar uma nota utilize “.”. Exemplo : 9.6
